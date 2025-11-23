@@ -4,7 +4,5 @@ jobs:
   info:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
       - name: Log issue event
         run: echo "An issue event has occurred: ${{ toJson(github) }}"
